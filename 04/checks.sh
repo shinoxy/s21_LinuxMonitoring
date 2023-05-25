@@ -9,8 +9,10 @@ if [[ $# -ne 0 ]]; then
 fi
 
 #CHECK2
-if [[ column1_background -eq column1_font_color ]]| [[ column2_background -eq column2_font_color ]]; then
-  echo "Error: font and back are identical. Please, try again."
-  exit 1
+if [[ "$font1_num" == "$back1_num" ]] || [[ $font2_num == $back2_num ]]; then
+  if [[ "$font1_num" != "default" ]] && [[ "$back1_num" != "default" ]] && [[ "$font2_num" != "default" ]] && [[ "$back2_num" != "default" ]]; then
+    echo "Error: font and back are identical. Please, try again."
+    exit 1
+  fi
 fi
 

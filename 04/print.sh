@@ -22,8 +22,8 @@ echo -e "${font1}${back1}SPACE_ROOT_FREE\e[0m = ${font2}${back2}$space_root_free
 
 echo ""
 
-echo "Column 1 background = $(print_color_number $column1_background) ($(get_color_name_back $column1_background))"
-echo "Column 1 font color = $(print_color_number $column1_font_color) ($(get_color_name_font $column1_font_color))"
-echo "Column 2 background = $(print_color_number $column2_background) ($(get_color_name_back $column2_background))"
-echo "Column 2 font color = $(print_color_number $column2_font_color) ($(get_color_name_font $column2_font_color))"
+echo "Column 1 background = $back1_num ($(get_color_name_back $column1_background))"
+echo "Column 1 font color = $font1_num ($(get_color_name_font $column1_font_color))"
+echo "Column 2 background = $back2_num ($(get_color_name_back $column2_background))"
+echo "Column 2 font color = $font2_num ($(get_color_name_font $column2_font_color))"
 

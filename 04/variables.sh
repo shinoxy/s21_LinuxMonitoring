@@ -35,3 +35,8 @@ font1=$(get_color_font $column1_font_color)
 back1=$(get_color_back $column1_background)
 font2=$(get_color_font $column2_font_color)
 back2=$(get_color_back $column2_background)
+
+font1_num="$(print_color_number $column1_font_color)"
+back1_num="$(print_color_number $column1_background)"
+font2_num="$(print_color_number $column2_font_color)"
+back2_num="$(print_color_number $column2_background)"

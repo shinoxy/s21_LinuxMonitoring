@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source colors.cfg
+source colors.conf
 
 . ./checks.sh
 . ./variables.sh
