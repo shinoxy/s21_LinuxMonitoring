@@ -17,7 +17,7 @@ for value in "$@"; do
 done
 
 #CHECK3
-if [[ font1 -eq back1 ]] || [[ font2 -eq back2 ]]; then
+if [[ $1 -eq $2 ]] || [[ $3 -eq $4 ]]; then
   echo "Error: font and back are identical. Please, try again."
   exit 1
 fi
